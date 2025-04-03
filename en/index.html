@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexPlek IQ - Premium Coworking Space in Beverwijk</title>
+    <meta name="description" content="FlexPlek IQ offers premium coworking spaces in Beverwijk with flexible workspaces, private offices, and meeting rooms.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/img/favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/mobile.css">
+    
+    <!-- Additional inline styles for header behavior -->
+    <style>
+        .header {
+            transition: transform 0.3s ease-in-out;
+        }
+        .header--hidden {
+            transform: translateY(-100%);
+        }
+    </style>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="../assets/img/logo.svg" alt="FlexPlek IQ Logo" width="150" height="40">
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav nav--desktop">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#offerings" class="nav__link">Our Offerings</a></li>
+                    <li class="nav__item"><a href="#kickback" class="nav__link">Kickback Program</a></li>
+                    <li class="nav__item"><a href="#booking" class="nav__link">Booking</a></li>
+                    <li class="nav__item"><a href="#hours" class="nav__link">Opening Hours</a></li>
+                    <li class="nav__item"><a href="#partners" class="nav__link">Partners</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item nav__item--language">
+                        <a href="../index.html" class="nav__link nav__link--language">NL</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" aria-label="Open Menu">
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Off-Canvas Menu -->
+        <nav class="nav nav--mobile" id="mobileNav">
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <img src="../assets/img/logo.svg" alt="FlexPlek IQ Logo" width="120" height="32">
+                </div>
+                <button class="nav__close" aria-label="Close Menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#offerings" class="nav__link">Our Offerings</a></li>
+                <li class="nav__item"><a href="#kickback" class="nav__link">Kickback Program</a></li>
+                <li class="nav__item"><a href="#booking" class="nav__link">Booking</a></li>
+                <li class="nav__item"><a href="#hours" class="nav__link">Opening Hours</a></li>
+                <li class="nav__item"><a href="#partners" class="nav__link">Partners</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                <li class="nav__item nav__item--language">
+                    <a href="../index.html" class="nav__link nav__link--language">NL</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav-overlay" id="navOverlay"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__bg">
+            <!-- Background image placed via CSS -->
+        </div>
+        <div class="container hero__container">
+            <h1 class="hero__title">FlexPlek IQ</h1>
+            <p class="hero__subtitle">Premium Coworking Space in Beverwijk</p>
+            <div class="hero__cta">
+                <a href="#offerings" class="btn btn--primary">Discover Our Offerings</a>
+                <a href="#contact" class="btn btn--secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Offerings Section -->
+    <section class="section offerings" id="offerings">
+        <div class="container">
+            <h2 class="section__title">Our Offerings</h2>
+            <div class="offerings__grid">
+                <!-- Flexible Desk Rentals -->
+                <div class="card offering-card">
+                    <div class="card__image">
+                        <img src="../assets/img/offerings/flexible-desks.jpg" alt="Flexible Desk Rentals" onerror="this.src='https://via.placeholder.com/400x250?text=Flexible+Desk+Rentals'">
+                    </div>
+                    <h3 class="card__title">Flexible Desk Rentals</h3>
+                    <p class="card__text">
+                        Experience the freedom of our adaptable workspace solutions. Choose your perfect spot daily, equipped with ergonomic furniture and all necessary amenities. Ideal for freelancers and remote workers seeking a professional environment.
+                    </p>
+                    <a href="#booking" class="card__link">More Info</a>
+                </div>
+                
+                <!-- Private Offices -->
+                <div class="card offering-card">
+                    <div class="card__image">
+                        <img src="../assets/img/offerings/private-office.jpg" alt="Private Offices" onerror="this.src='https://via.placeholder.com/400x250?text=Private+Offices'">
+                    </div>
+                    <h3 class="card__title">Private Offices</h3>
+                    <p class="card__text">
+                        Secure your dedicated space with our private office solutions. Fully furnished and customizable to your needs, these offices provide the perfect balance of privacy and community access. Available for both short and long-term commitments.
+                    </p>
+                    <a href="#booking" class="card__link">More Info</a>
+                </div>
+                
+                <!-- Meeting Rooms -->
+                <div class="card offering-card">
+                    <div class="card__image">
+                        <img src="../assets/img/offerings/meeting-room.jpg" alt="Meeting Rooms" onerror="this.src='https://via.placeholder.com/400x250?text=Meeting+Rooms'">
+                    </div>
+                    <h3 class="card__title">Meeting Rooms</h3>
+                    <p class="card__text">
+                        FlexPlek IQ offers modern, fully-equipped meeting rooms perfect for team collaborations, client presentations, and brainstorming sessions. With high-speed Wi-Fi, AV equipment, and flexible booking options, we provide the ideal space for productive meetings.
+                    </p>
+                    <a href="#booking" class="card__link">More Info</a>
+                </div>
+                
+                <!-- Gym -->
+                <div class="card offering-card">
+                    <div class="card__image">
+                        <img src="../assets/img/offerings/gym.jpg" alt="Gym" onerror="this.src='https://via.placeholder.com/400x250?text=Gym'">
+                    </div>
+                    <h3 class="card__title">Gym</h3>
+                    <p class="card__text">
+                        FlexPlek IQ features an on-site gym with modern equipment, perfect for staying active. Renters can also connect with a certified personal trainer for customized workouts and fitness guidance, supporting a healthy and balanced lifestyle.
+                    </p>
+                    <a href="#booking" class="card__link">More Info</a>
+                </div>
+                
+                <!-- Bar & Indoor Lounge -->
+                <div class="card offering-card">
+                    <div class="card__image">
+                        <img src="../assets/img/offerings/lounge.jpg" alt="Bar & Indoor Lounge" onerror="this.src='https://via.placeholder.com/400x250?text=Bar+%26+Indoor+Lounge'">
+                    </div>
+                    <h3 class="card__title">Bar & Indoor Lounge</h3>
+                    <p class="card__text">
+                        Unwind in our sophisticated lounge area. Featuring premium coffee, tea, and refreshments for members. The perfect space for networking, casual meetings, or a relaxing break from work.
+                    </p>
+                    <a href="#booking" class="card__link">More Info</a>
+                </div>
+                
+                <!-- Outdoor Terrace -->
+                <div class="card offering-card">
+                    <div class="card__image">
+                        <img src="../assets/img/offerings/terrace.jpg" alt="Outdoor Terrace" onerror="this.src='https://via.placeholder.com/400x250?text=Outdoor+Terrace'">
+                    </div>
+                    <h3 class="card__title">Outdoor Terrace</h3>
+                    <p class="card__text">
+                        Enjoy our spacious terrace for outdoor working or relaxation. Perfect for informal meetings or a breath of fresh air. Features comfortable seating, Wi-Fi coverage, and stunning city views.
+                    </p>
+                    <a href="#booking" class="card__link">More Info</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kickback Program Section -->
+    <section class="section kickback" id="kickback">
+        <div class="container">
+            <h2 class="section__title">Kickback Program</h2>
+            <div class="kickback__content">
+                <div class="kickback__info">
+                    <h3 class="kickback__subtitle">Unique Concept in the Netherlands</h3>
+                    <p class="kickback__text">
+                        FlexPlek IQ offers a revolutionary approach to coworking: become both a member and supporter of our workspaces and receive significant kickbacks on your membership.
+                    </p>
+                    
+                    <div class="kickback__how">
+                        <h4>How It Works</h4>
+                        <ul class="kickback__list">
+                            <li>Base cost per month: <strong>€2,200</strong></li>
+                            <li>Revenue above this threshold is shared with members</li>
+                            <li>Members receive <strong>50%</strong> of the excess amount</li>
+                            <li>Distribution is calculated monthly</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="kickback__calculator">
+                    <h3>Calculate Your Returns</h3>
+                    <div class="calculator">
+                        <div class="calculator__field">
+                            <label for="monthlyRevenue" class="calculator__label">Monthly Revenue (€)</label>
+                            <input type="number" id="monthlyRevenue" class="calculator__input" value="3300" min="2200" step="100">
+                        </div>
+                        
+                        <div class="calculator__field">
+                            <label class="calculator__label">Base Cost</label>
+                            <div class="calculator__value">€2,200</div>
+                        </div>
+                        
+                        <div class="calculator__field">
+                            <label class="calculator__label">Excess Amount</label>
+                            <div class="calculator__value" id="excessAmount">€1,100</div>
+                        </div>
+                        
+                        <div class="calculator__field">
+                            <label class="calculator__label">Your Kickback (50%)</label>
+                            <div class="calculator__value" id="yourKickback">€550</div>
+                        </div>
+                        
+                        <div class="calculator__field">
+                            <label class="calculator__label">Annual Return</label>
+                            <div class="calculator__value" id="annualReturn">€6,600</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Member Benefits Subsection -->
+            <div class="benefits">
+                <h3 class="benefits__title">Member Benefits</h3>
+                <div class="benefits__grid">
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h4 class="benefit-card__title">Reduced Costs</h4>
+                        <p class="benefit-card__text">Significantly lower your effective membership fees</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4 class="benefit-card__title">Passive Income</h4>
+                        <p class="benefit-card__text">Earn monthly returns while using the workspace</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="benefit-card__title">Community</h4>
+                        <p class="benefit-card__text">Be part of a unique cooperative workspace model</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-arrow-trend-up"></i>
+                        </div>
+                        <h4 class="benefit-card__title">Growing Returns</h4>
+                        <p class="benefit-card__text">As occupancy increases, so do your kickbacks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Options Section -->
+    <section class="section booking" id="booking">
+        <div class="container">
+            <h2 class="section__title">Booking Options</h2>
+            <div class="booking__options">
+                <div class="booking-card">
+                    <div class="booking-card__icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3 class="booking-card__title">Monthly Membership</h3>
+                    <ul class="booking-card__list">
+                        <li>Flexible desk access</li>
+                        <li>Private office hours</li>
+                        <li>Unlimited amenities</li>
+                        <li>Complimentary refreshments</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--secondary booking-card__btn">Request Information</a>
+                </div>
+                
+                <div class="booking-card">
+                    <div class="booking-card__icon">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+                    <h3 class="booking-card__title">Meeting Room Bookings</h3>
+                    <ul class="booking-card__list">
+                        <li>Small Room (capacity: 4): €12.50/hour (€1/hour for members)</li>
+                        <li>Large Room (capacity: 14): €19.50/hour (€1/hour for members)</li>
+                        <li>Full AV equipment included</li>
+                        <li>Coffee & tea service available</li>
+                    </ul>
+                    <a href="#room-availability" class="btn btn--primary booking-card__btn">Book Now</a>
+                </div>
+            </div>
+            
+            <!-- Live Room Availability Subsection -->
+            <div class="room-availability" id="room-availability">
+                <h3 class="room-availability__title">Live Room Availability</h3>
+                <p class="room-availability__info">Rooms can be booked from 8:00 to 20:00, Monday to Friday. All bookings are non-refundable.</p>
+                
+                <div class="date-picker">
+                    <label for="bookingDate">Select Date:</label>
+                    <input type="date" id="bookingDate" class="date-picker__input">
+                </div>
+                
+                <div class="rooms-grid">
+                    <!-- Small Meeting Room 1 -->
+                    <div class="room-card">
+                        <h4 class="room-card__title">Small Meeting Room 1</h4>
+                        <p class="room-card__capacity">Capacity: 4 people</p>
+                        <p class="room-card__price">€12.50/hour (€1/hour for members)</p>
+                        <div class="room-card__availability" id="room1Availability">
+                            <!-- Time slots will be generated here via JS -->
+                        </div>
+                    </div>
+                    
+                    <!-- Small Meeting Room 2 -->
+                    <div class="room-card">
+                        <h4 class="room-card__title">Small Meeting Room 2</h4>
+                        <p class="room-card__capacity">Capacity: 4 people</p>
+                        <p class="room-card__price">€12.50/hour (€1/hour for members)</p>
+                        <div class="room-card__availability" id="room2Availability">
+                            <!-- Time slots will be generated here via JS -->
+                        </div>
+                    </div>
+                    
+                    <!-- Small Meeting Room 3 -->
+                    <div class="room-card">
+                        <h4 class="room-card__title">Small Meeting Room 3</h4>
+                        <p class="room-card__capacity">Capacity: 4 people</p>
+                        <p class="room-card__price">€12.50/hour (€1/hour for members)</p>
+                        <div class="room-card__availability" id="room3Availability">
+                            <!-- Time slots will be generated here via JS -->
+                        </div>
+                    </div>
+                    
+                    <!-- Large Meeting Room -->
+                    <div class="room-card room-card--large">
+                        <h4 class="room-card__title">Large Meeting Room</h4>
+                        <p class="room-card__capacity">Capacity: 14 people</p>
+                        <p class="room-card__price">€19.50/hour (€1/hour for members)</p>
+                        <div class="room-card__availability" id="room4Availability">
+                            <!-- Time slots will be generated here via JS -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Booking Modal (will be hidden by default) -->
+                <div class="booking-modal" id="bookingModal">
+                    <div class="booking-modal__content">
+                        <button class="booking-modal__close">&times;</button>
+                        <h3 class="booking-modal__title">Book Meeting Room</h3>
+                        
+                        <div class="booking-modal__details">
+                            <p><strong>Room:</strong> <span id="modalRoomName"></span></p>
+                            <p><strong>Date:</strong> <span id="modalDate"></span></p>
+                            <p><strong>Time:</strong> <span id="modalTime"></span></p>
+                            <p><strong>Duration:</strong> <span id="modalHours"></span></p>
+                        </div>
+                        
+                        <div class="booking-modal__pricing">
+                            <h4>Pricing</h4>
+                            <div class="pricing-options">
+                                <div class="pricing-option">
+                                    <span class="pricing-label">Standard Rate:</span>
+                                    <span class="pricing-value" id="modalStandardPrice"></span>
+                                </div>
+                                <div class="pricing-option">
+                                    <span class="pricing-label">Member Rate:</span>
+                                    <span class="pricing-value" id="modalMemberPrice"></span>
+                                </div>
+                                <div class="pricing-total">
+                                    <span class="pricing-label">Total Price:</span>
+                                    <span class="pricing-value" id="modalTotalPrice" data-total-price="0"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="booking-modal__form">
+                            <div class="form-group">
+                                <label for="bookingName">Name</label>
+                                <input type="text" id="bookingName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="bookingEmail">Email</label>
+                                <input type="email" id="bookingEmail" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="bookingPhone">Phone Number</label>
+                                <input type="tel" id="bookingPhone" required>
+                            </div>
+                            
+                            <div class="membership-options">
+                                <div class="form-group form-group--checkbox">
+                                    <input type="checkbox" id="membershipCheck">
+                                    <label for="membershipCheck">I am a member</label>
+                                </div>
+                                
+                                <div class="member-code-container" id="memberCodeContainer">
+                                    <p class="member-code-info">If you're a member, enter your code for €1/hour pricing:</p>
+                                    <div class="member-code-input">
+                                        <input type="text" id="memberCodeInput" placeholder="Enter member code">
+                                        <button id="verifyCodeButton" class="btn btn--secondary">Verify</button>
+                                    </div>
+                                    <p class="member-code-status" id="memberCodeStatus"></p>
+                                </div>
+                            </div>
+                            
+                            <button id="paymentButton" class="btn btn--primary btn--full">Pay Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opening Hours Section -->
+    <section class="section hours" id="hours">
+        <div class="container">
+            <h2 class="section__title">Opening Hours</h2>
+            
+            <div class="hours__content">
+                <div class="hours__main">
+                    <div class="hours__day">
+                        <span class="hours__day-name">Monday - Friday</span>
+                        <span class="hours__time">8:00 - 20:00</span>
+                    </div>
+                    
+                    <div class="hours__day">
+                        <span class="hours__day-name">Saturday</span>
+                        <span class="hours__time">9:00 - 18:00</span>
+                    </div>
+                    
+                    <div class="hours__day">
+                        <span class="hours__day-name">Sunday</span>
+                        <span class="hours__time">Closed</span>
+                    </div>
+                </div>
+                
+                <div class="hours__features">
+                    <div class="hours-card">
+                        <div class="hours-card__icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <p class="hours-card__text">24/7 WiFi Access</p>
+                    </div>
+                    
+                    <div class="hours-card">
+                        <div class="hours-card__icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <p class="hours-card__text">Member Key Access</p>
+                    </div>
+                    
+                    <div class="hours-card">
+                        <div class="hours-card__icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <p class="hours-card__text">Coffee Bar: 8:00-18:00</p>
+                    </div>
+                    
+                    <div class="hours-card">
+                        <div class="hours-card__icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <p class="hours-card__text">Online Booking Available</p>
+                    </div>
+                </div>
+                
+                <div class="hours__note">
+                    <p>Meeting rooms can be booked during opening hours.</p>
+                    <a href="#room-availability" class="btn btn--secondary">Check Availability</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Partners Section -->
+    <section class="section partners" id="partners">
+        <div class="container">
+            <h2 class="section__title">Our Partners</h2>
+            <p class="partners__intro">Discover the innovative companies that are part of our FlexPlek IQ community.</p>
+            
+            <div class="partners__grid">
+                <!-- Partner 1 Placeholder -->
+                <div class="partner-card">
+                    <div class="partner-card__logo">
+                        <img src="../assets/img/partners/partner1-placeholder.jpg" alt="Partner 1" width="180" height="120">
+                    </div>
+                    <h3 class="partner-card__name">Company Name 1</h3>
+                    <p class="partner-card__description">Brief description of the company and what they do.</p>
+                    <a href="#" class="partner-card__link">Visit Website</a>
+                </div>
+                
+                <!-- Partner 2 Placeholder -->
+                <div class="partner-card">
+                    <div class="partner-card__logo">
+                        <img src="../assets/img/partners/partner2-placeholder.jpg" alt="Partner 2" width="180" height="120">
+                    </div>
+                    <h3 class="partner-card__name">Company Name 2</h3>
+                    <p class="partner-card__description">Brief description of the company and what they do.</p>
+                    <a href="#" class="partner-card__link">Visit Website</a>
+                </div>
+                
+                <!-- Partner 3 Placeholder -->
+                <div class="partner-card">
+                    <div class="partner-card__logo">
+                        <img src="../assets/img/partners/partner3-placeholder.jpg" alt="Partner 3" width="180" height="120">
+                    </div>
+                    <h3 class="partner-card__name">Company Name 3</h3>
+                    <p class="partner-card__description">Brief description of the company and what they do.</p>
+                    <a href="#" class="partner-card__link">Visit Website</a>
+                </div>
+                
+                <!-- Partner 4 Placeholder -->
+                <div class="partner-card">
+                    <div class="partner-card__logo">
+                        <img src="../assets/img/partners/partner4-placeholder.jpg" alt="Partner 4" width="180" height="120">
+                    </div>
+                    <h3 class="partner-card__name">Company Name 4</h3>
+                    <p class="partner-card__description">Brief description of the company and what they do.</p>
+                    <a href="#" class="partner-card__link">Visit Website</a>
+                </div>
+            </div>
+            
+            <div class="partners__cta">
+                <p>Interested in adding your company to our community?</p>
+                <a href="#contact" class="btn btn--primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section__title">Contact Us</h2>
+            
+            <div class="contact__content" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div class="contact__address" style="margin-bottom: 2rem;">
+                    <h3>Visit Us</h3>
+                    <p>Schieland 18, 1948 RM Beverwijk</p>
+                </div>
+                
+                <div class="contact__buttons" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-bottom: 3rem;">
+                    <a href="mailto:schieland@schieland18.nl" class="btn btn--icon">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                    
+                    <a href="https://wa.me/31622380123" class="btn btn--icon btn--whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    
+                    <a href="tel:+31622380123" class="btn btn--icon">
+                        <i class="fas fa-phone"></i> +31 622380123
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Copyright Notice -->
+            <div class="copyright" style="text-align: center; margin-top: 1rem; color: #455A64;">
+                <p>&copy; <span class="current-year">2025</span> FlexPlek IQ. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/calculator.js"></script>
+    <script src="../assets/js/booking.js"></script>
+</body>
+</html>
