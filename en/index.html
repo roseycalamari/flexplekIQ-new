@@ -36,7 +36,7 @@
         <div class="container header__container">
             <div class="header__logo">
                 <a href="index.html">
-                    <img src="../assets/img/logo.svg" alt="FlexPlek IQ Logo" width="150" height="40">
+                    <img src="../photos/SCHIELAND VASTGOED BEVERWIJK_Logo.png" alt="FlexPlek IQ Logo" width="150" height="40">
                 </a>
             </div>
             
@@ -67,7 +67,7 @@
         <nav class="nav nav--mobile" id="mobileNav">
             <div class="nav__header">
                 <div class="nav__logo">
-                    <img src="../assets/img/logo.svg" alt="FlexPlek IQ Logo" width="120" height="32">
+                    <img src="../photos/SCHIELAND VASTGOED BEVERWIJK_Logo.png" alt="FlexPlek IQ Logo" width="120" height="32">
                 </div>
                 <button class="nav__close" aria-label="Close Menu">
                     <i class="fas fa-times"></i>
@@ -89,16 +89,16 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero__bg">
-            <!-- Background image placed via CSS -->
-        </div>
-        <div class="container hero__container">
-            <h1 class="hero__title">FlexPlek IQ</h1>
-            <p class="hero__subtitle">Premium Coworking Space in Beverwijk</p>
+    <section class="hero" style="background-color: #f5f5f5 !important; position: relative !important; height: 100vh !important; min-height: 700px !important; overflow: hidden !important;">
+        <!-- Force background with multiple approaches -->
+        <div style="position: absolute !important; top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; background-image: url('../photos/building view under.jpg') !important; background-size: cover !important; background-position: center !important; z-index: 1 !important;"></div>
+        
+        <div class="container hero__container" style="position: relative !important; z-index: 3 !important;">
+            <h1 class="hero__title" style="color: white !important; text-shadow: 1px 1px 3px rgba(0,0,0,0.5) !important;">FlexPlek IQ</h1>
+            <p class="hero__subtitle" style="color: white !important; text-shadow: 1px 1px 3px rgba(0,0,0,0.5) !important;">Premium Coworking Space in Beverwijk</p>
             <div class="hero__cta">
                 <a href="#offerings" class="btn btn--primary">Discover Our Offerings</a>
-                <a href="#contact" class="btn btn--secondary">Contact Us</a>
+                <a href="#contact" class="btn btn--secondary" style="background-color: white !important; color: #1eaa5d !important;">Contact Us</a>
             </div>
         </div>
     </section>
@@ -111,43 +111,59 @@
                 <!-- Flexible Desk Rentals -->
                 <div class="card offering-card">
                     <div class="card__image">
-                        <img src="../assets/img/offerings/flexible-desks.jpg" alt="Flexible Desk Rentals" onerror="this.src='https://via.placeholder.com/400x250?text=Flexible+Desk+Rentals'">
+                        <img src="../photos/desk 1.jpg" alt="Flexible Desk Rentals" onerror="this.src='https://via.placeholder.com/400x250?text=Flexible+Desk+Rentals'">
                     </div>
                     <h3 class="card__title">Flexible Desk Rentals</h3>
                     <p class="card__text">
                         Experience the freedom of our adaptable workspace solutions. Choose your perfect spot daily, equipped with ergonomic furniture and all necessary amenities. Ideal for freelancers and remote workers seeking a professional environment.
                     </p>
-                    <a href="#booking" class="card__link">More Info</a>
+                    <button class="pricing-btn" data-show-text="View Pricing" data-hide-text="Hide Pricing">View Pricing</button>
+                    <div class="pricing-content">
+                        <ul class="pricing-list">
+                            <li><span>Flexible Desk:</span> <span class="price">€230 per month</span></li>
+                        </ul>
+                    </div>
                 </div>
                 
                 <!-- Private Offices -->
                 <div class="card offering-card">
                     <div class="card__image">
-                        <img src="../assets/img/offerings/private-office.jpg" alt="Private Offices" onerror="this.src='https://via.placeholder.com/400x250?text=Private+Offices'">
+                        <img src="../photos/office with desks.jpg" alt="Private Offices" onerror="this.src='https://via.placeholder.com/400x250?text=Private+Offices'">
                     </div>
                     <h3 class="card__title">Private Offices</h3>
                     <p class="card__text">
                         Secure your dedicated space with our private office solutions. Fully furnished and customizable to your needs, these offices provide the perfect balance of privacy and community access. Available for both short and long-term commitments.
                     </p>
-                    <a href="#booking" class="card__link">More Info</a>
+                    <button class="pricing-btn" data-show-text="View Pricing" data-hide-text="Hide Pricing">View Pricing</button>
+                    <div class="pricing-content">
+                        <ul class="pricing-list">
+                            <li><span>Private Office:</span> <span class="price">€475 per month</span></li>
+                        </ul>
+                    </div>
                 </div>
                 
                 <!-- Meeting Rooms -->
                 <div class="card offering-card">
                     <div class="card__image">
-                        <img src="../assets/img/offerings/meeting-room.jpg" alt="Meeting Rooms" onerror="this.src='https://via.placeholder.com/400x250?text=Meeting+Rooms'">
+                        <img src="../photos/meeting sofa.jpg" alt="Meeting Rooms" onerror="this.src='https://via.placeholder.com/400x250?text=Meeting+Rooms'">
                     </div>
                     <h3 class="card__title">Meeting Rooms</h3>
                     <p class="card__text">
                         FlexPlek IQ offers modern, fully-equipped meeting rooms perfect for team collaborations, client presentations, and brainstorming sessions. With high-speed Wi-Fi, AV equipment, and flexible booking options, we provide the ideal space for productive meetings.
                     </p>
-                    <a href="#booking" class="card__link">More Info</a>
+                    <button class="pricing-btn" data-show-text="View Pricing" data-hide-text="Hide Pricing">View Pricing</button>
+                    <div class="pricing-content">
+                        <ul class="pricing-list">
+                            <li><span>Small Room:</span> <span class="price">€12.50 per hour</span> <span class="member-tag">€1 for members</span></li>
+                            <li><span>Large Room:</span> <span class="price">€19.50 per hour</span> <span class="member-tag">€1 for members</span></li>
+                        </ul>
+                    </div>
                 </div>
                 
                 <!-- Gym -->
                 <div class="card offering-card">
                     <div class="card__image">
-                        <img src="../assets/img/offerings/gym.jpg" alt="Gym" onerror="this.src='https://via.placeholder.com/400x250?text=Gym'">
+                        <img src="../photos/gym1.webp" alt="Gym" onerror="this.src='https://via.placeholder.com/400x250?text=Gym'">
                     </div>
                     <h3 class="card__title">Gym</h3>
                     <p class="card__text">
@@ -159,7 +175,7 @@
                 <!-- Bar & Indoor Lounge -->
                 <div class="card offering-card">
                     <div class="card__image">
-                        <img src="../assets/img/offerings/lounge.jpg" alt="Bar & Indoor Lounge" onerror="this.src='https://via.placeholder.com/400x250?text=Bar+%26+Indoor+Lounge'">
+                        <img src="../photos/bar for terrace.webp" alt="Bar & Indoor Lounge" onerror="this.src='https://via.placeholder.com/400x250?text=Bar+%26+Indoor+Lounge'">
                     </div>
                     <h3 class="card__title">Bar & Indoor Lounge</h3>
                     <p class="card__text">
@@ -171,7 +187,7 @@
                 <!-- Outdoor Terrace -->
                 <div class="card offering-card">
                     <div class="card__image">
-                        <img src="../assets/img/offerings/terrace.jpg" alt="Outdoor Terrace" onerror="this.src='https://via.placeholder.com/400x250?text=Outdoor+Terrace'">
+                        <img src="../photos/terrace.jpg" alt="Outdoor Terrace" onerror="this.src='https://via.placeholder.com/400x250?text=Outdoor+Terrace'">
                     </div>
                     <h3 class="card__title">Outdoor Terrace</h3>
                     <p class="card__text">
@@ -276,162 +292,163 @@
         </div>
     </section>
 
-    <!-- Booking Options Section -->
-    <section class="section booking" id="booking">
-        <div class="container">
-            <h2 class="section__title">Booking Options</h2>
-            <div class="booking__options">
-                <div class="booking-card">
-                    <div class="booking-card__icon">
-                        <i class="fas fa-id-card"></i>
+   <!-- Booking Options Section -->
+<section class="section booking" id="booking">
+    <div class="container">
+        <h2 class="section__title">Booking Options</h2>
+        
+        <div class="booking__options">
+            <div class="booking-card">
+                <div class="booking-card__icon">
+                    <i class="fas fa-id-card"></i>
+                </div>
+                <h3 class="booking-card__title">Monthly Membership</h3>
+                <ul class="booking-card__list">
+                    <li>Flexible desk access</li>
+                    <li>Private office hours</li>
+                    <li>Unlimited amenities</li>
+                    <li>Complimentary refreshments</li>
+                </ul>
+                <a href="#contact" class="btn btn--secondary booking-card__btn">Request Information</a>
+            </div>
+            
+            <div class="booking-card">
+                <div class="booking-card__icon">
+                    <i class="fas fa-door-open"></i>
+                </div>
+                <h3 class="booking-card__title">Meeting Room Bookings</h3>
+                <ul class="booking-card__list">
+                    <li>Small Room (capacity: 4): €12.50/hour (€1/hour for members)</li>
+                    <li>Large Room (capacity: 14): €19.50/hour (€1/hour for members)</li>
+                    <li>Full AV equipment included</li>
+                    <li>Coffee & tea service available</li>
+                </ul>
+                <a href="#room-availability" class="btn btn--primary booking-card__btn">Book Now</a>
+            </div>
+        </div>
+        
+        <!-- Live Room Availability Subsection -->
+        <div class="room-availability" id="room-availability">
+            <h3 class="room-availability__title">Live Room Availability</h3>
+            <p class="room-availability__info">Rooms can be booked from 8:00 to 20:00, Monday to Friday. All bookings are non-refundable.</p>
+            
+            <div class="date-picker">
+                <label for="bookingDate">Select Date:</label>
+                <input type="date" id="bookingDate" class="date-picker__input">
+            </div>
+            
+            <div class="rooms-grid">
+                <!-- Small Meeting Room 1 -->
+                <div class="room-card">
+                    <h4 class="room-card__title">Small Meeting Room 1</h4>
+                    <p class="room-card__capacity">Capacity: 4 people</p>
+                    <p class="room-card__price">€12.50/hour (€1/hour for members)</p>
+                    <div class="room-card__availability" id="room1Availability">
+                        <!-- Time slots will be generated here via JS -->
                     </div>
-                    <h3 class="booking-card__title">Monthly Membership</h3>
-                    <ul class="booking-card__list">
-                        <li>Flexible desk access</li>
-                        <li>Private office hours</li>
-                        <li>Unlimited amenities</li>
-                        <li>Complimentary refreshments</li>
-                    </ul>
-                    <a href="#contact" class="btn btn--secondary booking-card__btn">Request Information</a>
                 </div>
                 
-                <div class="booking-card">
-                    <div class="booking-card__icon">
-                        <i class="fas fa-door-open"></i>
+                <!-- Small Meeting Room 2 -->
+                <div class="room-card">
+                    <h4 class="room-card__title">Small Meeting Room 2</h4>
+                    <p class="room-card__capacity">Capacity: 4 people</p>
+                    <p class="room-card__price">€12.50/hour (€1/hour for members)</p>
+                    <div class="room-card__availability" id="room2Availability">
+                        <!-- Time slots will be generated here via JS -->
                     </div>
-                    <h3 class="booking-card__title">Meeting Room Bookings</h3>
-                    <ul class="booking-card__list">
-                        <li>Small Room (capacity: 4): €12.50/hour (€1/hour for members)</li>
-                        <li>Large Room (capacity: 14): €19.50/hour (€1/hour for members)</li>
-                        <li>Full AV equipment included</li>
-                        <li>Coffee & tea service available</li>
-                    </ul>
-                    <a href="#room-availability" class="btn btn--primary booking-card__btn">Book Now</a>
+                </div>
+                
+                <!-- Small Meeting Room 3 -->
+                <div class="room-card">
+                    <h4 class="room-card__title">Small Meeting Room 3</h4>
+                    <p class="room-card__capacity">Capacity: 4 people</p>
+                    <p class="room-card__price">€12.50/hour (€1/hour for members)</p>
+                    <div class="room-card__availability" id="room3Availability">
+                        <!-- Time slots will be generated here via JS -->
+                    </div>
+                </div>
+                
+                <!-- Large Meeting Room -->
+                <div class="room-card room-card--large">
+                    <h4 class="room-card__title">Large Meeting Room</h4>
+                    <p class="room-card__capacity">Capacity: 14 people</p>
+                    <p class="room-card__price">€19.50/hour (€1/hour for members)</p>
+                    <div class="room-card__availability" id="room4Availability">
+                        <!-- Time slots will be generated here via JS -->
+                    </div>
                 </div>
             </div>
             
-            <!-- Live Room Availability Subsection -->
-            <div class="room-availability" id="room-availability">
-                <h3 class="room-availability__title">Live Room Availability</h3>
-                <p class="room-availability__info">Rooms can be booked from 8:00 to 20:00, Monday to Friday. All bookings are non-refundable.</p>
-                
-                <div class="date-picker">
-                    <label for="bookingDate">Select Date:</label>
-                    <input type="date" id="bookingDate" class="date-picker__input">
-                </div>
-                
-                <div class="rooms-grid">
-                    <!-- Small Meeting Room 1 -->
-                    <div class="room-card">
-                        <h4 class="room-card__title">Small Meeting Room 1</h4>
-                        <p class="room-card__capacity">Capacity: 4 people</p>
-                        <p class="room-card__price">€12.50/hour (€1/hour for members)</p>
-                        <div class="room-card__availability" id="room1Availability">
-                            <!-- Time slots will be generated here via JS -->
+            <!-- Booking Modal (will be hidden by default) -->
+            <div class="booking-modal" id="bookingModal">
+                <div class="booking-modal__content">
+                    <button class="booking-modal__close">&times;</button>
+                    <h3 class="booking-modal__title">Book Meeting Room</h3>
+                    
+                    <div class="booking-modal__details">
+                        <p><strong>Room:</strong> <span id="modalRoomName"></span></p>
+                        <p><strong>Date:</strong> <span id="modalDate"></span></p>
+                        <p><strong>Time:</strong> <span id="modalTime"></span></p>
+                        <p><strong>Duration:</strong> <span id="modalHours"></span></p>
+                    </div>
+                    
+                    <div class="booking-modal__pricing">
+                        <h4>Pricing</h4>
+                        <div class="pricing-options">
+                            <div class="pricing-option">
+                                <span class="pricing-label">Standard Rate:</span>
+                                <span class="pricing-value" id="modalStandardPrice"></span>
+                            </div>
+                            <div class="pricing-option">
+                                <span class="pricing-label">Member Rate:</span>
+                                <span class="pricing-value" id="modalMemberPrice"></span>
+                            </div>
+                            <div class="pricing-total">
+                                <span class="pricing-label">Total Price:</span>
+                                <span class="pricing-value" id="modalTotalPrice" data-total-price="0"></span>
+                            </div>
                         </div>
                     </div>
                     
-                    <!-- Small Meeting Room 2 -->
-                    <div class="room-card">
-                        <h4 class="room-card__title">Small Meeting Room 2</h4>
-                        <p class="room-card__capacity">Capacity: 4 people</p>
-                        <p class="room-card__price">€12.50/hour (€1/hour for members)</p>
-                        <div class="room-card__availability" id="room2Availability">
-                            <!-- Time slots will be generated here via JS -->
-                        </div>
-                    </div>
-                    
-                    <!-- Small Meeting Room 3 -->
-                    <div class="room-card">
-                        <h4 class="room-card__title">Small Meeting Room 3</h4>
-                        <p class="room-card__capacity">Capacity: 4 people</p>
-                        <p class="room-card__price">€12.50/hour (€1/hour for members)</p>
-                        <div class="room-card__availability" id="room3Availability">
-                            <!-- Time slots will be generated here via JS -->
-                        </div>
-                    </div>
-                    
-                    <!-- Large Meeting Room -->
-                    <div class="room-card room-card--large">
-                        <h4 class="room-card__title">Large Meeting Room</h4>
-                        <p class="room-card__capacity">Capacity: 14 people</p>
-                        <p class="room-card__price">€19.50/hour (€1/hour for members)</p>
-                        <div class="room-card__availability" id="room4Availability">
-                            <!-- Time slots will be generated here via JS -->
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Booking Modal (will be hidden by default) -->
-                <div class="booking-modal" id="bookingModal">
-                    <div class="booking-modal__content">
-                        <button class="booking-modal__close">&times;</button>
-                        <h3 class="booking-modal__title">Book Meeting Room</h3>
-                        
-                        <div class="booking-modal__details">
-                            <p><strong>Room:</strong> <span id="modalRoomName"></span></p>
-                            <p><strong>Date:</strong> <span id="modalDate"></span></p>
-                            <p><strong>Time:</strong> <span id="modalTime"></span></p>
-                            <p><strong>Duration:</strong> <span id="modalHours"></span></p>
+                    <div class="booking-modal__form">
+                        <div class="form-group">
+                            <label for="bookingName">Name</label>
+                            <input type="text" id="bookingName" required>
                         </div>
                         
-                        <div class="booking-modal__pricing">
-                            <h4>Pricing</h4>
-                            <div class="pricing-options">
-                                <div class="pricing-option">
-                                    <span class="pricing-label">Standard Rate:</span>
-                                    <span class="pricing-value" id="modalStandardPrice"></span>
+                        <div class="form-group">
+                            <label for="bookingEmail">Email</label>
+                            <input type="email" id="bookingEmail" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bookingPhone">Phone Number</label>
+                            <input type="tel" id="bookingPhone" required>
+                        </div>
+                        
+                        <div class="membership-options">
+                            <div class="form-group form-group--checkbox">
+                                <input type="checkbox" id="membershipCheck">
+                                <label for="membershipCheck">I am a member</label>
+                            </div>
+                            
+                            <div class="member-code-container" id="memberCodeContainer">
+                                <p class="member-code-info">If you're a member, enter your code for €1/hour pricing:</p>
+                                <div class="member-code-input">
+                                    <input type="text" id="memberCodeInput" placeholder="Enter member code">
+                                    <button id="verifyCodeButton" class="btn btn--secondary">Verify</button>
                                 </div>
-                                <div class="pricing-option">
-                                    <span class="pricing-label">Member Rate:</span>
-                                    <span class="pricing-value" id="modalMemberPrice"></span>
-                                </div>
-                                <div class="pricing-total">
-                                    <span class="pricing-label">Total Price:</span>
-                                    <span class="pricing-value" id="modalTotalPrice" data-total-price="0"></span>
-                                </div>
+                                <p class="member-code-status" id="memberCodeStatus"></p>
                             </div>
                         </div>
                         
-                        <div class="booking-modal__form">
-                            <div class="form-group">
-                                <label for="bookingName">Name</label>
-                                <input type="text" id="bookingName" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="bookingEmail">Email</label>
-                                <input type="email" id="bookingEmail" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="bookingPhone">Phone Number</label>
-                                <input type="tel" id="bookingPhone" required>
-                            </div>
-                            
-                            <div class="membership-options">
-                                <div class="form-group form-group--checkbox">
-                                    <input type="checkbox" id="membershipCheck">
-                                    <label for="membershipCheck">I am a member</label>
-                                </div>
-                                
-                                <div class="member-code-container" id="memberCodeContainer">
-                                    <p class="member-code-info">If you're a member, enter your code for €1/hour pricing:</p>
-                                    <div class="member-code-input">
-                                        <input type="text" id="memberCodeInput" placeholder="Enter member code">
-                                        <button id="verifyCodeButton" class="btn btn--secondary">Verify</button>
-                                    </div>
-                                    <p class="member-code-status" id="memberCodeStatus"></p>
-                                </div>
-                            </div>
-                            
-                            <button id="paymentButton" class="btn btn--primary btn--full">Pay Now</button>
-                        </div>
+                        <button id="paymentButton" class="btn btn--primary btn--full">Pay Now</button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Opening Hours Section -->
     <section class="section hours" id="hours">
@@ -586,5 +603,6 @@
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/calculator.js"></script>
     <script src="../assets/js/booking.js"></script>
+    <script src="../assets/js/scroll.js"></script>
 </body>
 </html>

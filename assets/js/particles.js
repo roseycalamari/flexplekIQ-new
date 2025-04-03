@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
  * Initialize the particle system
  */
 ParticleSystem.init = function() {
-    // Identify sections for particle effects
+    // Identify sections for particle effects - removing hero to fix bg image issue
     this.sectionsWithParticles = [
-        { selector: '.hero', config: 'hero' },
+        // { selector: '.hero', config: 'hero' }, // Commented out to fix hero background image issues
         { selector: '.kickback', config: 'subtle' },
         { selector: '.contact', config: 'minimal' }
     ];
